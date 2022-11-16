@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+  integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+<!-- custume -->
+<link rel="stylesheet" href="landingpage.css">
+
+<body>
+
+  <div style="position: absolute; z-index: 10;" class="bg-info w-100 h-100" id="loader">
+    <div class="h-100 w-100 d-flex align-items-center justify-content-center flex-column">
+      <img src="assets/logo.png" alt="" srcset="" width="300">
+      <div class="btn btn-transparant" type="button" disabled>
+        <span class=" spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
+        Loading Virtual Tour Mohon Ditunggu
+      </div>
+    </div>
+  </div>
+
+
+  <div class="body-content vh-100 " id="body-content">
+    <!-- footer -->
+    <div style="position: absolute; z-index: 9; bottom: 0; width: 100%; height: 10vh; "
+      class="text-primary bg-info d-flex align-items-center justify-content-center footer">
+      <ul class="nav justify-content-center ">
+        <li class="nav-item">
+          <a class="nav-link text-white font-weight-bold active" data-toggle="modal" data-target="#exampleModal">PANORAMA</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white font-weight-bold" href="#">IFORMASI</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white font-weight-bold" href="#">PHOTOALBUM</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white font-weight-bold" href="#">FLOORPLAN</a>
+        </li>
+      </ul>
+    </div>
+    <!-- end footer -->
+
+    <!-- logo -->
+     <div class="position-absolute " style="left: 5%; top: 5%; z-index: 9;">
+        <img src="assets/logo.png" alt="" width="130">
+    </div>
+
+    <!-- end Logo -->
+
+    <!-- iframe -->
+    <div style="z-index: 1; position: relative;">
+      <iframe src="https://www.theasys.io/viewer/ayrcBF8A9MrEzeTr9IXxVWnCtp8uJ0" allowfullscreen="true" frameborder="0"
+        scrolling="no" allow="vr;gyroscope;accelerometer" style="width:100%;border:none; height: 90vh; "> </iframe>
+    </div>
+    <!-- endiframe -->
+
+
+    <!-- list modal -->
+
+    
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog  modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- end modal -->
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+
+  <script>
+    const myLoader = document.getElementById("loader");
+
+    window.addEventListener('load', function () {
+      setTimeout(() => {
+        myLoader.style.display = "none";
+      }, 3000);
+    })
+  </script>
+
+</body>
+
+</html>
