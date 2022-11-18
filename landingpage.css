@@ -1,3 +1,13 @@
-.footer {
-    border-radius: 200;
+.modal-content {
+    opacity: 90%;
+}
+
+.card {
+    opacity: 100%;
+    border: 0;
+}
+.card:hover {
+    background-color: white;
+    cursor: pointer;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
