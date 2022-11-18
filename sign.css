@@ -27,7 +27,6 @@ body {
 .social_icon span {
     font-size: 60px;
     margin-left: 10px;
-    color: #FFC312;
 }
 
 .social_icon span:hover {
@@ -39,16 +38,9 @@ body {
     color: white;
 }
 
-.social_icon {
-    position: absolute;
-    right: 20px;
-    top: -45px;
-}
 
 .input-group-prepend span {
     width: 50px;
-    background-color: #FFC312;
-    color: black;
     border: 0 !important;
 }
 
@@ -69,16 +61,6 @@ input:focus {
     margin-right: 5px;
 }
 
-.login_btn {
-    color: black;
-    background-color: #FFC312;
-    width: 100px;
-}
-
-.login_btn:hover {
-    color: black;
-    background-color: white;
-}
 
 .links {
     color: white;
